@@ -61,7 +61,7 @@ GBData data = await GeocoderBuddy.findDetails(position);
 ## Address Class
 ```dart
   String road;
-  String village;
+  String city;
   String county;
   String stateDistrict;
   String state;

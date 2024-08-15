@@ -60,7 +60,7 @@ class GBData {
 class Address {
   Address({
     required this.road,
-    required this.village,
+    required this.city,
     required this.county,
     required this.stateDistrict,
     required this.state,
@@ -71,7 +71,7 @@ class Address {
   });
 
   String road;
-  String village;
+  String city;
   String county;
   String stateDistrict;
   String state;
@@ -82,7 +82,7 @@ class Address {
 
   factory Address.fromJson(Map<String, dynamic> json) => Address(
         road: json["road"],
-        village: json["village"],
+        city: json["city"],
         county: json["county"],
         stateDistrict: json["state_district"],
         state: json["state"],
@@ -94,7 +94,7 @@ class Address {
 
   Map<String, dynamic> toJson() => {
         "road": road,
-        "village": village,
+        "city": city,
         "county": county,
         "state_district": stateDistrict,
         "state": state,
