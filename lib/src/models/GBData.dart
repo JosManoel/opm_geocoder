@@ -61,7 +61,6 @@ class Address {
   Address({
     required this.road,
     required this.city,
-    required this.county,
     required this.stateDistrict,
     required this.state,
     required this.iso31662Lvl4,
@@ -72,7 +71,6 @@ class Address {
 
   String road;
   String city;
-  String county;
   String stateDistrict;
   String state;
   String iso31662Lvl4;
@@ -83,7 +81,6 @@ class Address {
   factory Address.fromJson(Map<String, dynamic> json) => Address(
         road: json["road"],
         city: json["city"],
-        county: json["county"],
         stateDistrict: json["state_district"],
         state: json["state"],
         iso31662Lvl4: json["ISO3166-2-lvl4"],
@@ -95,7 +92,6 @@ class Address {
   Map<String, dynamic> toJson() => {
         "road": road,
         "city": city,
-        "county": county,
         "state_district": stateDistrict,
         "state": state,
         "ISO3166-2-lvl4": iso31662Lvl4,
