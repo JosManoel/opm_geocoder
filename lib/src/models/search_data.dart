@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-List<SearchData> bgSearchDataFromJson(String str) => List<SearchData>.from(
-    json.decode(str).map((x) => SearchData.fromJson(x)));
+List<SearchData> searchDataFromJson(String str) =>
+    List<SearchData>.from(json.decode(str).map((x) => SearchData.fromJson(x)));
 
-String bgSearchDataToJson(List<SearchData> data) =>
+String searchDataToJson(List<SearchData> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class SearchData {

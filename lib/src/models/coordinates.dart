@@ -1,8 +1,8 @@
 class Coordinates {
   Coordinates({
     required this.lat,
-    required this.lng,
+    required this.lon,
   });
   double lat;
-  double lng;
+  double lon;
 }
