@@ -31,20 +31,20 @@ List<GBSearchData> data = await GeocoderBuddy.query(query);
   double importance;
 ```
 
-# Converting GBSearchData To GBData
+# Converting GBSearchData To LocationData
 ```dart
-// GBData Class Porvided By geocoder_buddy
-GBData data = await GeocoderBuddy.searchToGBData(GBSearchData data);
+// LocationData Class Porvided By geocoder_buddy
+LocationData data = await GeocoderBuddy.searchToLocationData(GBSearchData data);
 ```
 
 # Getting Details From Latitude/Longitude
 ```dart
 GBLatLng position = GBLatLng(38.8951,-77.0364);
-GBData data = await GeocoderBuddy.findDetails(position);
+LocationData data = await GeocoderBuddy.findDetails(position);
 ```
 #
 
-## GBData Class
+## LocationData Class
 ```dart
   int placeId;
   String osmType;

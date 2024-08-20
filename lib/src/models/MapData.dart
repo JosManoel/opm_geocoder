@@ -1,4 +1,3 @@
-// Map Data Model
 import 'dart:convert';
 
 List<MapData> mapDataFromJson(String str) =>

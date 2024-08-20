@@ -1,13 +1,13 @@
 import 'dart:convert';
 
-List<GBSearchData> bgSearchDataFromJson(String str) => List<GBSearchData>.from(
-    json.decode(str).map((x) => GBSearchData.fromJson(x)));
+List<SearchData> bgSearchDataFromJson(String str) => List<SearchData>.from(
+    json.decode(str).map((x) => SearchData.fromJson(x)));
 
-String bgSearchDataToJson(List<GBSearchData> data) =>
+String bgSearchDataToJson(List<SearchData> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class GBSearchData {
-  GBSearchData({
+class SearchData {
+  SearchData({
     required this.placeId,
     required this.id,
     required this.boundingbox,
@@ -27,7 +27,7 @@ class GBSearchData {
   int placeRank;
   double importance;
 
-  factory GBSearchData.fromJson(Map<String, dynamic> json) => GBSearchData(
+  factory SearchData.fromJson(Map<String, dynamic> json) => SearchData(
         placeId: json["place_id"],
         id: json["osm_id"],
         boundingbox: List<String>.from(json["boundingbox"].map((x) => x)),

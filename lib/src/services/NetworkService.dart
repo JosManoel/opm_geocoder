@@ -1,4 +1,4 @@
-import 'package:geocoder_buddy/src/models/GBData.dart';
+import 'package:geocoder_buddy/src/models/LocationData.dart';
 import 'package:geocoder_buddy/src/models/GBLatLng.dart';
 import 'package:geocoder_buddy/src/models/MapData.dart';
 import 'package:http/http.dart' as http;
@@ -18,7 +18,7 @@ class NetworkService {
     }
   }
 
-  static Future<GBData> getDetails(GBLatLng pos) async {
+  static Future<LocationData> getDetails(GBLatLng pos) async {
     var request = http.Request('GET',
         Uri.parse('$PATH/reverse?lat=${pos.lat}&lon=${pos.lng}&format=jsonv2'));
 

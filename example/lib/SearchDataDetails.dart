@@ -25,7 +25,7 @@ class _SearchDataDetailsState extends State<SearchDataDetails> {
     setState(() {
       isLoading = true;
     });
-    GBData data = await GeocoderBuddy.searchToGBData(widget.data);
+    LocationData data = await GeocoderBuddy.searchToLocationData(widget.data);
     setState(() {
       isLoading = false;
       details = data.toJson();

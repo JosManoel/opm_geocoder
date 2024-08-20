@@ -1,12 +1,11 @@
-// Geocoder Buddy Data Model
 import 'dart:convert';
 
-GBData gbDataFromJson(String str) => GBData.fromJson(json.decode(str));
+LocationData gbDataFromJson(String str) => LocationData.fromJson(json.decode(str));
 
-String gbDataToJson(GBData data) => json.encode(data.toJson());
+String gbDataToJson(LocationData data) => json.encode(data.toJson());
 
-class GBData {
-  GBData({
+class LocationData {
+  LocationData({
     required this.placeId,
     required this.osmType,
     required this.id,
@@ -30,7 +29,7 @@ class GBData {
   Address address;
   List<String> boundingbox;
 
-  factory GBData.fromJson(Map<String, dynamic> json) => GBData(
+  factory LocationData.fromJson(Map<String, dynamic> json) => LocationData(
         placeId: json["place_id"],
         osmType: json["osm_type"],
         id: json["osm_id"],
@@ -60,6 +59,7 @@ class GBData {
 class Address {
   Address({
     required this.road,
+    required this.suburb,
     required this.city,
     required this.stateDistrict,
     required this.state,
@@ -70,6 +70,7 @@ class Address {
   });
 
   String road;
+  String suburb;
   String city;
   String stateDistrict;
   String state;
@@ -80,6 +81,7 @@ class Address {
 
   factory Address.fromJson(Map<String, dynamic> json) => Address(
         road: json["road"],
+        suburb: json["suburb"],
         city: json["city"],
         stateDistrict: json["state_district"],
         state: json["state"],
@@ -91,6 +93,7 @@ class Address {
 
   Map<String, dynamic> toJson() => {
         "road": road,
+        "suburb": suburb,
         "city": city,
         "state_district": stateDistrict,
         "state": state,

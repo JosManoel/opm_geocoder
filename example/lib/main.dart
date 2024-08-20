@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       isLoading = true;
     });
-    GBData data = await GeocoderBuddy.findDetails(pos);
+    LocationData data = await GeocoderBuddy.findDetails(pos);
     setState(() {
       isLoading = false;
       details = data.toJson();

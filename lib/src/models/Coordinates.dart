@@ -1,5 +1,5 @@
-class GBLatLng {
-  GBLatLng({
+class Coordinates {
+  Coordinates({
     required this.lat,
     required this.lng,
   });

@@ -8,7 +8,7 @@ class GeocoderBuddy {
     return bgSearchDataFromJson(mapDataToJson(data));
   }
 
-  static Future<GBData> searchToGBData(GBSearchData data) async {
+  static Future<LocationData> searchToLocationData(GBSearchData data) async {
     var pos =
         GBLatLng(lat: double.parse(data.lat), lng: double.parse(data.lon));
     var res = await NetworkService.getDetails(pos);
