@@ -1,80 +1,44 @@
-![](https://raw.githubusercontent.com/flutterbuddy1/geocoder_buddy/main/banner.png)
+# OSM Geocoder!
 
-# Features
-* Easy To Use
-* Fast & Secure
-* No Api Key Required
-* More Detailed Data
-* Search Locations Without Api Key
+**No API Key Required!** Obtain detailed location data without needing an API key. This package is a client for the **[Open Street Map](https://www.openstreetmap.org)**.
 
-# Getting Started
+***
+
+## Using this package
 
 Run This Command in Terminal or Install in Your Way
 ```yaml
-flutter pub get geocoder_buddy
+
 ```
 
-# Searching Location
+### Searching Location
 ```dart
-// GBSearchData Class Porvided By geocoder_buddy
-List<GBSearchData> data = await GeocoderBuddy.query(query);
-```
-## GBSearchData Class
-```dart
-  int placeId;
-  int id;
-  List<String> boundingbox;
-  String lat;
-  String lon;
-  String displayName;
-  int placeRank;
-  double importance;
+
 ```
 
-# Converting GBSearchData To LocationData
+### Getting Details From Latitude/Longitude
 ```dart
-// LocationData Class Porvided By geocoder_buddy
-LocationData data = await GeocoderBuddy.searchToLocationData(GBSearchData data);
+Coordinates coordinates = Coordinates(38.8951,-77.0364);
 ```
 
-# Getting Details From Latitude/Longitude
-```dart
-GBLatLng position = GBLatLng(38.8951,-77.0364);
-LocationData data = await GeocoderBuddy.findDetails(position);
-```
-#
+***
 
-## LocationData Class
-```dart
-  int placeId;
-  String osmType;
-  int id;
-  String lat;
-  String lon;
-  int placeRank;
-  double importance;
-  String displayName;
-  // Address Class Porvided By geocoder_buddy
-  Address address;
-  List<String> boundingbox;
-```
-## Address Class
-```dart
-  String road;
-  String city;
-  String county;
-  String stateDistrict;
-  String state;
-  String iso31662Lvl4;
-  String postcode;
-  String country;
-  String countryCode;
-```
-# Buy Me A Coffee
-<a href="https://www.buymeacoffee.com/flutterbuddy">
-    <img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-1.svg" height="50" target="_flutterbuddy">
-</a>
+## About the OpenStreetMap
 
-# License
+**OpenStreetMap** is a collaborative project that creates and distributes free geographic data without legal or technical restrictions for use.
 
-See [LICENSE](LICENSE)
+This project is 20 years old and is currently in its 6th version of the API, with subprojects in various countries, including [Brazil!](https://wiki.openstreetmap.org/wiki/Brazil)
+
+
+***
+
+* Contribute with [OpenStreetMap](https://wiki.openstreetmap.org/wiki/How_to_contribute)
+* Veja a [Comunidade Brasileira](https://wiki.openstreetmap.org/wiki/Brazil)
+* Visit the [geocoder_buddy](https://pub.dev/packages/geocoder_buddy) project
+* Review the [LICENSE](LICENSE)
+
+<div align = "center">
+
+  👋 Feito por [JosManoel](https://github.com/JosManoel) com ☕ , 🎧 e 💻.
+
+</div>
