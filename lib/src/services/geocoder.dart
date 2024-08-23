@@ -9,14 +9,14 @@ class OSMGeocoder {
   }
 
   static Future<LocationData> searchToLocationData(SearchData data) async {
-    var pos =
+    var coordinates =
         Coordinates(lat: double.parse(data.lat), lon: double.parse(data.lon));
-    var res = await NetworkService.getDetails(pos);
+    var res = await NetworkService.getDetails(coordinates);
     return res;
   }
 
-  static Future<LocationData> findDetails(Coordinates pos) async {
-    var data = await NetworkService.getDetails(pos);
+  static Future<LocationData> findDetails(Coordinates coordinates) async {
+    var data = await NetworkService.getDetails(coordinates);
     return data;
   }
 }
