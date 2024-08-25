@@ -5,7 +5,12 @@ import 'package:http/http.dart' as http;
 
 const PATH = "https://nominatim.openstreetmap.org";
 
+/// A service class that handles network requests to the OpenStreetMap API.
 class NetworkService {
+  /// Searches for an address using the OpenStreetMap API.
+  ///
+  /// [query] is the address to search for.
+  /// Returns a list of [MapData] containing the search results.
   static Future<List<MapData>> searchAddress(String query) async {
     var request =
         http.Request('GET', Uri.parse("$PATH/search?q=$query&format=jsonv2"));
@@ -18,6 +23,10 @@ class NetworkService {
     }
   }
 
+  /// Retrieves detailed information about a location using its coordinates.
+  ///
+  /// [pos] are the geographical coordinates of the location.
+  /// Returns [LocationData] with detailed information about the location.
   static Future<LocationData> getDetails(Coordinates pos) async {
     var request = http.Request('GET',
         Uri.parse('$PATH/reverse?lat=${pos.lat}&lon=${pos.lon}&format=jsonv2'));
@@ -26,7 +35,7 @@ class NetworkService {
 
     if (response.statusCode == 200) {
       var data = await response.stream.bytesToString();
-      return gbDataFromJson(data);
+      return locationDataFromJson(data);
     } else {
       throw Exception(response.reasonPhrase);
     }

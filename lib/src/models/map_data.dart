@@ -1,11 +1,14 @@
 import 'dart:convert';
 
+/// Converts a JSON string to a list of [MapData] objects.
 List<MapData> mapDataFromJson(String str) =>
     List<MapData>.from(json.decode(str).map((x) => MapData.fromJson(x)));
 
+/// Converts a list of [MapData] objects to a JSON string.
 String mapDataToJson(List<MapData> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
+/// Represents map data from the OpenStreetMap API.
 class MapData {
   MapData({
     required this.placeId,
@@ -20,17 +23,37 @@ class MapData {
     required this.importance,
   });
 
+  /// Unique identifier for the place.
   int placeId;
+
+  /// License information of the data.
   String licence;
+
+  /// Type of OpenStreetMap element.
   String osmType;
+
+  /// Unique identifier for the OpenStreetMap element.
   int osmId;
+
+  /// Bounding box of the place.
   List<String> boundingbox;
+
+  /// Latitude of the location.
   String lat;
+
+  /// Longitude of the location.
   String lon;
+
+  /// Display name of the place.
   String displayName;
+
+  /// Rank of the place.
   int placeRank;
+
+  /// Importance of the place.
   double importance;
 
+  /// Creates a [MapData] object from a JSON map.
   factory MapData.fromJson(Map<String, dynamic> json) => MapData(
         placeId: json["place_id"],
         licence: json["licence"],
@@ -44,6 +67,7 @@ class MapData {
         importance: json["importance"].toDouble(),
       );
 
+  /// Converts a [MapData] object to a JSON map.
   Map<String, dynamic> toJson() => {
         "place_id": placeId,
         "licence": licence,
