@@ -56,6 +56,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "coverage",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/coverage-1.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/crypto-3.0.5",
       "packageUri": "lib/",
@@ -104,6 +110,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/glob-2.1.2",
       "packageUri": "lib/",
@@ -122,10 +134,28 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "http_multi_server",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/io-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/js-0.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
     },
     {
       "name": "leak_tracker",
@@ -182,6 +212,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mime",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/mime-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
@@ -194,8 +236,38 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "pub_semver",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/shelf_static-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -204,6 +276,18 @@
       "rootUri": "file:///home/manoelfreitas/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/source_maps-0.10.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "source_span",
@@ -236,8 +320,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "test",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/test-1.25.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "test_api",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/test_api-0.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/test_core-0.6.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -272,6 +368,18 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "web_socket_channel",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "yaml",
       "rootUri": "file:///home/manoelfreitas/.pub-cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
@@ -281,10 +389,10 @@
       "name": "osm_geocoder",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-08-24T17:51:31.710261Z",
+  "generated": "2024-08-25T20:22:45.294176Z",
   "generator": "pub",
   "generatorVersion": "3.4.1",
   "flutterRoot": "file:///home/manoelfreitas/snap/flutter/common/flutter",

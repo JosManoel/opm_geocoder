@@ -16,7 +16,7 @@
 Fetching location data using coordinates with the OSM Geocoder is straightforward:
 
 ```dart
-Coordinates coordinates = Coordinates(-5,7807,-35,1978);
+Coordinates coordinates = Coordinates(-5.837799,-35.203978);
 LocationData data = await OSMGeocoder.findDetails(coordinates);
 ```
 
