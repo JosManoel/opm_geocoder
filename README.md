@@ -70,10 +70,3 @@ This project is 20 years old and is currently in its 6th version of the API, wit
 * Veja a [Comunidade Brasileira](https://wiki.openstreetmap.org/wiki/Brazil)
 * Visit the [geocoder_buddy](https://pub.dev/packages/geocoder_buddy) project
 * Review the [LICENSE](LICENSE)
-
-<div align = "center">
-
-  👋 Feito por [JosManoel](https://github.com/JosManoel) com ☕ , 🎧 e 💻.
-
-</div>
-
