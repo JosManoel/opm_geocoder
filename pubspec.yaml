@@ -9,7 +9,7 @@ issue_tracker: https://github.com/JosManoel/opm_geocoder/issues
 topics:
   - geocoder
   - map
-  - open_street_map
+  - openStreetMap
 
 platforms:
   android:
