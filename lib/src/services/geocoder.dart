@@ -1,5 +1,4 @@
 import 'package:osm_geocoder/src/services/network_service.dart';
-import 'package:osm_geocoder/src/models/map_data.dart';
 import 'package:osm_geocoder/osm_geocoder.dart';
 
 /// A class that provides methods to interact with the OpenStreetMap Geocoding API.

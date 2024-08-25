@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 /// Represents a detailed address of a location.
 class Address {
   Address({
