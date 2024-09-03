@@ -45,15 +45,15 @@ class Address {
 
   /// Creates an [Address] object from a JSON map.
   factory Address.fromJson(Map<String, dynamic> json) => Address(
-        road: json["road"],
-        suburb: json["suburb"],
-        city: json["city"],
-        stateDistrict: json["state_district"],
-        state: json["state"],
-        iso31662Lvl4: json["ISO3166-2-lvl4"],
-        postcode: json["postcode"],
-        country: json["country"],
-        countryCode: json["country_code"],
+        road: json["road"] ?? "",
+        suburb: json["suburb"] ?? "",
+        city: json["city"] ?? "",
+        stateDistrict: json["state_district"] ?? "",
+        state: json["state"] ?? "",
+        iso31662Lvl4: json["ISO3166-2-lvl4"] ?? "",
+        postcode: json["postcode"] ?? "",
+        country: json["country"] ?? "",
+        countryCode: json["country_code"] ?? "",
       );
 
   /// Converts an [Address] object to a JSON map.

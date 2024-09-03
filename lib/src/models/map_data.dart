@@ -55,16 +55,16 @@ class MapData {
 
   /// Creates a [MapData] object from a JSON map.
   factory MapData.fromJson(Map<String, dynamic> json) => MapData(
-        placeId: json["place_id"],
-        licence: json["licence"],
-        osmType: json["osm_type"],
-        osmId: json["osm_id"],
-        boundingbox: List<String>.from(json["boundingbox"].map((x) => x)),
-        lat: json["lat"],
-        lon: json["lon"],
-        displayName: json["display_name"],
-        placeRank: json["place_rank"],
-        importance: json["importance"].toDouble(),
+        placeId: json["place_id"] ?? "",
+        licence: json["licence"] ?? "",
+        osmType: json["osm_type"] ?? "",
+        osmId: json["osm_id"] ?? "",
+        boundingbox: List<String>.from(json["boundingbox"].map((x) => x)) ?? [],
+        lat: json["lat"] ?? "",
+        lon: json["lon"] ?? "",
+        displayName: json["display_name"] ?? "",
+        placeRank: json["place_rank"] ?? "",
+        importance: json["importance"].toDouble() ?? 0.0,
       );
 
   /// Converts a [MapData] object to a JSON map.

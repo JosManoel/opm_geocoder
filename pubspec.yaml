@@ -1,6 +1,6 @@
 name: osm_geocoder
 description: Obtain detailed location data without needing an API key. This package is a client for the Open Street Map.
-version: 1.0.0
+version: 1.0.0+1
 
 homepage: https://github.com/JosManoel/opm_geocoder
 repository: https://github.com/JosManoel/opm_geocoder
